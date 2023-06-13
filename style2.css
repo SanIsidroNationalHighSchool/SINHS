@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient(to bottom right, #0033cc, #0099ff);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Dimmed overlay for background image */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1;
+  }
+  
+  .navbar {
+    overflow: hidden;
+  }
+  .navbar a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  hr 
+  {
+  border: 1px solid #f3f1f1;
+  margin-bottom: 5px;
+  color: white;
+  }
+  .registerbutton
+  {
+  background-color: #29a329;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  text: bold;
+  margin-left: 350px;
+  }
+  span{
+     font-size: 20px;
+     color: white;
+  }
+
+ h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin-bottom:10px;
+ }
+ 
+ form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0 22px 0;
+    margin-left: 150px;
+    display: inline-block;
+    border: none;
+    background: #edeaea;
+    }
+input[type="submit"] {
+    background-color: #fff;
+    color: #0033cc;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.option{
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0 22px 0;
+    margin-left: 200px;
+    display: inline-block;
+    border: none;
+}
+
+
+  body{
+    background-color: #333;
+  }
+  
+  .column {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  
+  .gallery-container {
+    text-align: center;
+  }
+  .gallery-image {
+    max-width: 800px;
+    max-height: 500px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .button{
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.button button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #806bcd;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.message .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+  

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mission and Vision</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <img src="./images/logoM.png" alt="" height="30" width="30">
+      <a><span style="font-size:30px"> San Isidro National High School</span></a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="enrol.html">Enrollment</a>
+    <a href="history.html">History</a>
+    <div class="dropdown">
+      <a href="#requirements">Requirements</a>
+      <div class="dropdown-content">
+        <a href="#service1">Student Card</a>
+        <a href="#service2">PSA Certificate</a>
+        <a href="#service3">2X2 Picture</a>
+      </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <a href="#about">About</a>
+      <div class="dropdown-content">
+        <a href="admin.html">Admin Login</a>
+        <a href="about.html">The Deped Mission,Vision,Core Values</a>
+        <a href="aboutschool.html">About</a>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+
+  <div class="gallery-container">
+    <img id="image" class="gallery-image" src="first_image.jpg" alt="Image" height="500" width="600">
+    <br>
+    <a class="btn" id="prevBtn" href="#">Previous</a>
+    <a class="btn" id="nextBtn" href="#">Next</a>
+  </div>
+
+  <script>
+    var images = ["./images/the_vision.jpg", "./images/the_mission.jpg", "./images/corevalues.jpg"]; // Add the image URLs here
+    var currentIndex = 0;
+    var imageElement = document.getElementById("image");
+    var prevBtn = document.getElementById("prevBtn");
+    var nextBtn = document.getElementById("nextBtn");
+
+    function showImage(index) {
+      imageElement.src = images[index];
+      prevBtn.disabled = (index === 0);
+      nextBtn.disabled = (index === images.length - 1);
+    }
+
+    prevBtn.addEventListener("click", function() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showImage(currentIndex);
+      }
+    });
+
+    nextBtn.addEventListener("click", function() {
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        showImage(currentIndex);
+      }
+    });
+
+    showImage(currentIndex);
+  </script>
+</body>
+</html>

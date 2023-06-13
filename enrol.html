@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<head>
+  <title>SINHS Webpage</title>
+ <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+       <header class = "header" id = "home">
+				<div>
+			  <img src="./images/logoM.png" alt="" height="30" width="30">
+			  <span style="font-size:30px"> San Isidro National High School</span>
+			</div>
+      <div class="overlay"></div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="enrol.html">Enrollment</a>
+    <a href="history.html">History</a>
+    <div class="dropdown">
+      <a href="#requirements">Requirements</a>
+      <div class="dropdown-content">
+        <a href="#service1">Student Card</a>
+        <a href="#service2">PSA Certificate</a>
+        <a href="#service3">2X2 Picture</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#about">About</a>
+      <div class="dropdown-content">
+        <a href="admin.html">Admin Login</a>
+        <a href="about.html">The Deped Mission,Vision,Core Values</a>
+        <a href="aboutschool.html">About</a>
+      </div>
+    </div>
+ <h1>Enrollment</h1>
+ <form action="https://api.sheetmonkey.io/form/9LYBjzECqZAwQBm9PU6vqG" method="post">
+    <label for="lrn">LRN:</label>
+    <input type="text" id="lrn" name="lrn" required>
+   
+    <label for="fullname">Fullname1:  (Lastname, Firstname, Middlename)</label>
+    <input  type="text" id="fullname" name="fullname" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <label for="birthdate">Birthdate:</label>
+    <input  type="date" id="birthdate" name="birthdate" required>
+
+    <label for="sy">School Year:  (2023-2024)</label>
+    <input type="text" id="sy" name="sy" required>
+
+    <label for="strand">Strand/Program:</label>
+    <select id="strand" name="strand" required>
+        <option value="Junior High School">Junior High School</option>
+        <option value="ICT">ICT</option>
+        <option value="TVL">TVL</option>
+        <option value="ABM">ABM</option>
+        <option value="HUMSS">HUMSS</option>
+    </select>
+
+    <label for="gradelevel">Grade Level:</label>
+    <select id="gradelevel" name="gradelevel" required>
+        <option value="G7">G7</option>
+        <option value="G8">G8</option>
+        <option value="G9">G9</option>
+        <option value="G10">G10</option>
+        <option value="G11">G11</option>
+        <option value="G12">G12</option>
+    </select>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
